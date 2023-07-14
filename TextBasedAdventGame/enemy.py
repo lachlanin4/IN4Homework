@@ -7,5 +7,10 @@ class Enemy(Character):
     """
 
     # Create a character
-    def __init__(self, char_name, char_description):
+    def __init__(self, char_name, char_description, weakness=None):
        super().__init__(char_name, char_description)
+       self._weakness = weakness
+
+    @property
+    def weakness(self):
+       return self._weakness
