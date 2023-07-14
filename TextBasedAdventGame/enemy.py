@@ -15,5 +15,9 @@ class Enemy(Character):
     def weakness(self):
        return self._weakness
 
+    @weakness.setter
+    def weakness(self, item_weakness):
+        self._item_weakness = item_weakness
+
     def set_weakness(self, item_weakness):
        self._weakness = item_weakness
