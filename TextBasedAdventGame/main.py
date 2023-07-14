@@ -19,6 +19,8 @@ dining_hall.link_room(kitchen, "North")
 dining_hall.link_room(ballroom, "West")
 ballroom.link_room(dining_hall, "East")
 
+dining_hall.character = dave
+
 current_room = kitchen
 
 while True:
