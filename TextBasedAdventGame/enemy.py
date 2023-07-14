@@ -21,3 +21,11 @@ class Enemy(Character):
 
     def set_weakness(self, item_weakness):
        self._weakness = item_weakness
+
+    def fight(self, combat_item):
+       if combat_item == self.weakness:
+          print("You fend " + self.name + " off with the " + combat_item)
+          return True
+      else:
+          print(self.name + " crushes you, puny adventurer")
+          return False
