@@ -1,3 +1,4 @@
+from character import Enemy
 from room import Room
 
 kitchen = Room("kitchen")
