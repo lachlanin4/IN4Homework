@@ -10,3 +10,6 @@ dave.talk()
 
 bork = Enemy("bork", "A smelly zombie")
 bork.set_weakness("cheese")
+print("What will you fight with?")
+fight_with = input()
+bork.fight(fight_with)
