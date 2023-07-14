@@ -26,5 +26,10 @@ current_room = kitchen
 while True:
     print("\n")
     current_room.get_details()
+
+    inhabitant = current_room.character
+    if inhabitant is not None:
+       inhabitant.describe()
+
     command = input("> ")
     current_room = current_room.move(command)
