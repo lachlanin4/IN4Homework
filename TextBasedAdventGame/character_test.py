@@ -9,3 +9,4 @@ dave.set_conversation("Hello I'm Dave and I'm new here")
 dave.talk()
 
 bork = Enemy("bork", "A smelly zombie")
+bork.set_weakness("cheese")
