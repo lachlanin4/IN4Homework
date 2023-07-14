@@ -10,6 +10,7 @@ class Room:
         self.room_name = room_name
         self.description = None
         self.linked_rooms = {}
+        self.character = None
 
     @property
     def description(self):
