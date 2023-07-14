@@ -26,6 +26,6 @@ class Enemy(Character):
        if combat_item == self.weakness:
           print("You fend " + self.name + " off with the " + combat_item)
           return True
-      else:
+       else:
           print(self.name + " crushes you, puny adventurer")
           return False
