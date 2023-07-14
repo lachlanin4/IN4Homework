@@ -1,4 +1,4 @@
-from character import Enemy
+from enemy import Enemy
 from room import Room
 
 kitchen = Room("kitchen")
@@ -8,6 +8,11 @@ ballroom = Room("ballroom")
 ballroom.description = "A room full of balls"
 dining_hall = Room("dining hall")
 dining_hall.description = "A room with a long table, one chair and a distinct smell"
+
+# Add enemy dave to proceedings
+dave = Enemy("Dave", "A smelly zombie")
+dave.set_conversation("Brrlgrh.. rgrhl... brains...")
+dave.set_weakness("cheese")
 
 kitchen.link_room(dining_hall, "South")
 dining_hall.link_room(kitchen, "North")
